@@ -1,0 +1,18 @@
+module.exports = {
+  publicPath: '/',
+  transpileDependencies: [
+    'bootstrap-vue',
+  ],
+  pwa: {
+    name: 'ZapBillz',
+    manifestOptions: {
+      short_name: 'Invoices',
+    },
+    themeColor: '#ffffff',
+    appleMobileWebAppCapable: 'yes',
+    workboxPluginMode: 'GenerateSW',
+    workboxOptions: {
+      exclude: [/htaccess/],
+    },
+  },
+};
